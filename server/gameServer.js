@@ -42,6 +42,9 @@ class GameServer {
         //data = this.game.gameObjects.map(o => o.data())
         this.io.emit("sync", data);
     }
+    run(port, ip){
+        this.server.listen(port, ip, () => console.log(`running on http://${ip}${port}`));
+    }
 }
 //const gameServer = new GameServer();
 //gameServer.server.listen(PORT, IP, () => console.log(`running on ${IP}:${PORT}`))
