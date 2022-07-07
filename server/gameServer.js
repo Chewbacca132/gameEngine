@@ -43,7 +43,7 @@ class GameServer {
         this.io.emit("sync", data);
     }
     run(port, ip){
-        this.server.listen(port, ip, () => console.log(`running on http://${ip}${port}`));
+        this.server.listen(port, ip, () => console.log(`running on http://${ip}:${port}`));
     }
 }
 //const gameServer = new GameServer();
