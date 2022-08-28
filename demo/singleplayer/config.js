@@ -5,11 +5,6 @@ input.addEvent("left", "a", true);
 input.addEvent("right", "d", true);
 input.addEvent("fire", "mouse0", true);
 
-assetLoader.loadSprite("soldier", "https://opengameart.org/sites/default/files/styles/medium/public/survivor-idle_rifle_0.png");
-assetLoader.loadSprite("bullet", "https://img.itch.zone/aW1hZ2UvNTQyMjE4LzI4ODUzNjUucG5n/347x500/Ohb8MN.png");
-assetLoader.loadSpriteSheet("explosion", "https://jloog.com/images/drawn-explosion-sprite-1.png", 6, 8);
+assetLoader.loadSprite("ball", "https://th.bing.com/th/id/R.5bb47523d4ec794f6ac45dfb359b2d6f?rik=59a%2bDltI6EqxUw&riu=http%3a%2f%2fcdn.onlinewebfonts.com%2fsvg%2fimg_29736.png&ehk=vNFjHiGnroP%2fF02dRtJSSXA%2foTxfUhbrDvPhaygvDQs%3d&risl=&pid=ImgRaw&r=0");
 
-render.addRenderer("soldier", render.renderMode.InterpolationRenderer, "soldier");
-render.addRenderer("bullet", render.renderMode.InterpolationRenderer, "bullet");
-render.addRenderer("explosion", render.renderMode.AnimationRenderer, "explosion", 40);
-render.addRenderer("muzzleFlash", render.renderMode.AnimationRenderer, "explosion", 120);
+render.addRenderer("ball", render.renderMode.Renderer, "ball");
